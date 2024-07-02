@@ -42,7 +42,7 @@ class Material:
     @staticmethod
     def get_materials(material_id="all", as_dict=True):
         material_id = ("water", "tissue", "skull", "air", "standoff") if material_id == "all" else material_id
-        if isinstance(material_id, tuple) or  isinstance(material_id, list):
+        if isinstance(material_id, (list, tuple)):
             materials = {m: Material.get_materials(m, as_dict=False) for m in material_id}
         elif material_id in MATERIALS:
             materials = MATERIALS[material_id]
@@ -55,7 +55,7 @@ class Material:
 
     @staticmethod
     def from_dict(d):
-        if isinstance(d, list) or isinstance(d, tuple):
+        if isinstance(d, (list, tuple)):
             return {dd['id']: Material.from_dict(dd) for dd in d}
         elif isinstance(d, str):
             return Material.get_materials(d, as_dict=False)

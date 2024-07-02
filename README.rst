@@ -20,7 +20,7 @@ Installation
 Requirements
 ~~~~~~~~~~~~
 
-Python 3.11 on Windows or Linux.
+Python 3.9 or later on Windows or Linux.
 
 Create Virtual Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

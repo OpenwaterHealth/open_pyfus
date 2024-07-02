@@ -11,7 +11,7 @@ authors = [
 description = "Openwater Focused Ultrasound Toolkit"
 readme = "README.rst"
 license.file = "LICENSE"
-requires-python = ">=3.11" # TODO: Decrease this version number when resolving #6
+requires-python = ">=3.9"
 classifiers = [
   "Development Status :: 1 - Planning",
   "Intended Audience :: Science/Research",
@@ -21,9 +21,8 @@ classifiers = [
   "Programming Language :: Python",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
-#  "Programming Language :: Python :: 3.8", # TODO: Uncomment some of these when resolving #6
-#  "Programming Language :: Python :: 3.9",
-#  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Topic :: Scientific/Engineering",
@@ -189,7 +188,6 @@ ignore = [
   "T201", # `print` found
   "SIM102", # Use a single `if` statement instead of nested `if` statements
   "SIM118", # Use `key not in dict` instead of `key not in dict.keys()`
-  "PLR1701", # Merge `isinstance` calls: `isinstance(d, (list, tuple))`
   "SIM101", # Multiple `isinstance` calls for `d`, merge into a single call
   "RET503", # Missing explicit `return` at the end of function able to return non-`None` value
   "B006", # Do not use mutable data structures for argument defaults

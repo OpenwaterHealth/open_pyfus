@@ -24,7 +24,7 @@ def lint(session: nox.Session) -> None:
     )
 
 
-@nox.session(python='3.11')
+@nox.session()
 def pylint(session: nox.Session) -> None:
     """
     Run PyLint.
@@ -35,7 +35,7 @@ def pylint(session: nox.Session) -> None:
     session.run("pylint", "openlifu", *session.posargs)
 
 
-@nox.session(python='3.11')
+@nox.session()
 def tests(session: nox.Session) -> None:
     """
     Run the unit and regular tests.
